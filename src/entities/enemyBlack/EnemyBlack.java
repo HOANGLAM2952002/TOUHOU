@@ -1,22 +1,26 @@
-package entities.EnemyPink;
+package entities.enemyBlack;
 
 import bases.BoxCollider;
 import bases.GameObject;
 import bases.SpriteUtils;
 import bases.Vector2D;
+import renderer.ImageRenderer;
 
 
-public class EnemyPink extends GameObject {
-    int spellNum = 10;
+public class EnemyBlack extends GameObject {
+    int spellNum = 4;
     int bullet_cnt = 0;
-    public EnemyPink(){
-        this.image = SpriteUtils.loadImage("assets/images/enemies/level0/pink/0.png");
+    public EnemyBlack(){
+        this.renderer = new ImageRenderer("assets/images/enemies/level0/black/0.png");
         this.position = new Vector2D((float) Math.random() * 384, 0);
         this.boxCollider = new BoxCollider(this, 28,28);
     }
     @Override
     public void run(){
         this.deactiveIfNeeded();
+        /**
+         * consider using trigonometry to move Enemy
+         */
         if (bullet_cnt >= 20){
             bullet_cnt = 0;
             this.castSpell();
@@ -24,14 +28,15 @@ public class EnemyPink extends GameObject {
             bullet_cnt++;
         }
 
-        this.position.y++;
+        this.position.addUp(0,1);
+        super.run();
     }
 
     private void castSpell() {
         for (int i = 0; i < spellNum; i++){
             double divideAng = (360 / spellNum) * i;
             double radConvert = Math.toRadians(divideAng);
-            EnemyPinkBullet newBullet= GameObject.recycle(EnemyPinkBullet.class);
+            EnemyBlackBullet newBullet = GameObject.recycle(EnemyBlackBullet.class);
             newBullet.newAngle = radConvert;
             newBullet.position.x = this.position.x + 8;
             newBullet.position.y = this.position.y + 32;

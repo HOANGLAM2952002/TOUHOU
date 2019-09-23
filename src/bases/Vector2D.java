@@ -75,6 +75,11 @@ public class Vector2D {
         v1.addUp(1, 1);
         System.out.println(v1.toString());
     }
+
+    public void set(float x, float y) {
+        this.x = x;
+        this.y = y;
+    }
 }
 
 

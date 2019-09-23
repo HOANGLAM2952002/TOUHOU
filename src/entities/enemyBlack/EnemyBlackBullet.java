@@ -1,17 +1,18 @@
-package entities.EnemyBlack;
+package entities.enemyBlack;
 
 import bases.BoxCollider;
 import bases.GameObject;
 import bases.SpriteUtils;
 import bases.Vector2D;
-import entities.Player;
+import entities.player.Player;
+import renderer.ImageRenderer;
 
 
 public class EnemyBlackBullet extends GameObject {
     double spellDistance = 5;
     double newAngle;
     public EnemyBlackBullet(){
-        this.image = SpriteUtils.loadImage("assets/images/enemies/bullets/blue.png");
+        this.renderer = new ImageRenderer("assets/images/enemies/bullets/blue.png");
         this.position = new Vector2D();
         this.boxCollider = new BoxCollider(this, 16, 16);
     }
@@ -29,7 +30,7 @@ public class EnemyBlackBullet extends GameObject {
     }
 
     public void deactiveIfNeeded(){
-        if (this.position.y > 600){
+        if (this.position.y > 600 | this.position.y < 0 | this.position.x > 384 | this.position.x < 0){
             deActive();
         }
     }

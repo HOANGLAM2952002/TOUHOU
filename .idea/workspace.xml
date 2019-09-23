@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cf343e48-2577-41b6-a060-3c686a08142a" name="Default Changelist" comment="" />
+    <list default="true" id="cf343e48-2577-41b6-a060-3c686a08142a" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/renderer/ImageRenderer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/renderer/Renderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game/bases/GameObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/bases/GameObject.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game/bases/Vector2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/bases/Vector2D.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game/entities/EnemyBlack/EnemyBlack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/entities/EnemyBlack/EnemyBlack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game/entities/EnemyBlack/EnemyBlackBullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/entities/EnemyBlack/EnemyBlackBullet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game/entities/EnemyBlack/EnemyBlackSpawner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/entities/EnemyBlack/EnemyBlackSpawner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game/entities/EnemyBlue/EnemyBlue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/entities/EnemyBlue/EnemyBlue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game/entities/EnemyBlue/EnemyBlueBullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/entities/EnemyBlue/EnemyBlueBullet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game/entities/EnemyBlue/EnemyBlueSpawner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/entities/EnemyBlue/EnemyBlueSpawner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game/entities/EnemyPink/EnemyPink.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/entities/EnemyPink/EnemyPink.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game/entities/EnemyPink/EnemyPinkBullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/entities/EnemyPink/EnemyPinkBullet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game/entities/EnemyPink/EnemyPinkSpawner.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/entities/EnemyPink/EnemyPinkSpawner.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game/entities/Player.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game/entities/PlayerSpell.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game/game/GameCanvas$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/game/GameCanvas$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/CI-game/game/GameCanvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/game/GameCanvas.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bases/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/GameObject.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/bases/Vector2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/Vector2D.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Background.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/EnemyBlack/EnemyBlack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/enemyBlack/EnemyBlack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/EnemyBlack/EnemyBlackBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/enemyBlack/EnemyBlackBullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/EnemyBlack/EnemyBlackSpawner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/enemyBlack/EnemyBlackSpawner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/EnemyBlue/EnemyBlue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/enemyBlue/EnemyBlue.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/EnemyBlue/EnemyBlueBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/enemyBlue/EnemyBlueBullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/EnemyBlue/EnemyBlueSpawner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/enemyBlue/EnemyBlueSpawner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/EnemyPink/EnemyPink.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/enemyPink/EnemyPink.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/EnemyPink/EnemyPinkBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/enemyPink/EnemyPinkBullet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/EnemyPink/EnemyPinkSpawner.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/enemyPink/EnemyPinkSpawner.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/player/Player.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/PlayerSpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/player/PlayerSpell.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/game/GameCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameCanvas.java" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,6 +46,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -30,11 +65,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="entities.EnemyPink" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\admin\IdeaProjects\CI-game" />
+    </key>
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="entities.EnemyPink" />
     </key>
   </component>
   <component name="RunDashboard">

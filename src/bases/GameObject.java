@@ -1,7 +1,10 @@
 package bases;
+import renderer.Renderer;
+
 import java.awt.*;
 import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
+import java.util.Vector;
 
 public class GameObject {
     private static ArrayList<GameObject> gameObjects = new ArrayList<>();
@@ -69,18 +72,18 @@ public class GameObject {
              * isAssignableFrom = compare
              * tại sao không dùng cls.equals()
              */
-            if (cls.isAssignableFrom(gameObject.getClass())){
-                if (!gameObject.isActive) {
-                    return (E) gameObject;
-                }
+            if (!gameObject.isActive && cls.isAssignableFrom(gameObject.getClass())){
+                return (E) gameObject;
             }
         }
         return null;
     }
 
-    public Image image;
+    public Renderer renderer;
     public Vector2D position;
     public BoxCollider boxCollider;
+    public Vector2D velocity;
+
     /**
      * check xem co dang song ko
      */
@@ -90,13 +93,18 @@ public class GameObject {
         GameObject.add(this);
         this.position = new Vector2D(0, 0);
         this.isActive = true;
+        this.velocity = new Vector2D(0,0);
     }
 
     public void render(Graphics g) {
-        g.drawImage(this.image, (int)this.position.x, (int)this.position.y, null);
+        if (renderer != null){
+            renderer.render(g, this.position);
+        }
     }
 
     public void run() {
+        this.position.addUp(this.velocity);
+        this.velocity.set(0,0);
 
     }
 

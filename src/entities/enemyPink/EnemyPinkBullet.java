@@ -1,22 +1,22 @@
-package entities.EnemyBlue;
+package entities.enemyPink;
 
 import bases.BoxCollider;
 import bases.GameObject;
 import bases.SpriteUtils;
 import bases.Vector2D;
-import entities.Player;
+import entities.player.Player;
+import renderer.ImageRenderer;
 
-public class EnemyBlueBullet extends GameObject {
+public class EnemyPinkBullet extends GameObject {
     double spellDistance = 5;
     double newAngle;
-
-    public EnemyBlueBullet(){
-        this.image = SpriteUtils.loadImage("assets/images/enemies/bullets/red.png");
+    public EnemyPinkBullet(){
+        this.renderer = new ImageRenderer("assets/images/enemies/bullets/pink.png");
         this.position = new Vector2D();
-        this.boxCollider = new BoxCollider(this, 12, 12);
+        this.boxCollider = new BoxCollider(this, 16, 16);
     }
 
-    public void run() {
+    public void run(){
         this.deactiveIfNeeded();
         this.position.x += spellDistance*Math.sin(newAngle);
         this.position.y += spellDistance*Math.cos(newAngle);
@@ -28,8 +28,8 @@ public class EnemyBlueBullet extends GameObject {
         }
     }
 
-    private void deactiveIfNeeded() {
-        if (this.position.y > 600){
+    public void deactiveIfNeeded(){
+        if (this.position.y > 600 | this.position.y < 0 | this.position.x > 384 | this.position.x < 0){
             deActive();
         }
     }

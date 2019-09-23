@@ -1,16 +1,17 @@
-package entities.EnemyBlue;
+package entities.enemyBlue;
 
 import bases.BoxCollider;
 import bases.GameObject;
 import bases.SpriteUtils;
 import bases.Vector2D;
+import renderer.ImageRenderer;
 
 public class EnemyBlue extends GameObject {
-    int spellNum = 10;
+    int spellNum = 4;
     int bullet_cnt = 0;
 
     public EnemyBlue(){
-        this.image = SpriteUtils.loadImage("assets/images/enemies/level0/blue/0.png");
+        this.renderer = new ImageRenderer("assets/images/enemies/level0/blue/0.png");
         this.position = new Vector2D((float) Math.random() * 384, 0);
         this.boxCollider = new BoxCollider(this, 32, 32);
     }
@@ -24,7 +25,8 @@ public class EnemyBlue extends GameObject {
         } else {
             bullet_cnt++;
         }
-        this.position.y++;
+        this.position.addUp(0,1);
+        super.run();
     }
 
     private void castSpell() {

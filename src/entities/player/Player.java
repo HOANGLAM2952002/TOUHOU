@@ -1,25 +1,15 @@
-package entities;
-
+package entities.player;
 import bases.*;
+import renderer.ImageRenderer;
 
-
-import javax.imageio.ImageIO;
-import javax.swing.*;
-import java.awt.*;
-import java.io.File;
-import java.io.IOException;
-import java.util.ArrayList;
 
 public class Player extends GameObject {
     long cnt = 0;
-    ArrayList<PlayerSpell> playerSpells;
-
 
     public Player(){
-        this.image = SpriteUtils.loadImage("assets/images/players/straight/0.png");
+        this.renderer = new ImageRenderer("assets/images/players/straight/0.png");
         this.position = new Vector2D(175, 500);
         this.cnt = 0;
-        playerSpells = new ArrayList<>();
         //this.boxCollider = new BoxCollider(this, 32, 48);
     }
 
@@ -40,17 +30,18 @@ public class Player extends GameObject {
      * @param keyPressed (no need)
      */
     public void run() {
+        float vx = 0, vy = 0;
         if (KeyPressed.getInstance().upPressed){
-            position.y -= 5;
+            vy = - 5;
         }
         if (KeyPressed.getInstance().downPressed){
-            position.y += 5;
+            vy = 5;
         }
         if (KeyPressed.getInstance().rightPressed){
-            position.x += 5;
+            vx = 5;
         }
         if (KeyPressed.getInstance().leftPressed){
-            position.x -= 5;
+            vx = -5;
         }
 
         if (KeyPressed.getInstance().shootPresed && cnt >= 20){
@@ -63,10 +54,8 @@ public class Player extends GameObject {
         this.position.x = Utils.clamp(this.position.x, 0, 384 - 44);
         this.position.y = Utils.clamp(this.position.y, 0, 600 - 100);
 
-        for (int i = 0; i < this.playerSpells.size(); i++){
-            PlayerSpell playerSpell = this.playerSpells.get(i);
-            playerSpell.run();
-        }
+        this.velocity.set(vx, vy);
+        super.run();
     }
 
     /**
@@ -78,7 +67,6 @@ public class Player extends GameObject {
         PlayerSpell newSpell = GameObject.recycle(PlayerSpell.class);
         newSpell.position.x = this.position.x;
         newSpell.position.y = this.position.y;
-        playerSpells.add(newSpell);
     }
 }
 

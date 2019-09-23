@@ -2,6 +2,7 @@ package entities;
 
 import bases.GameObject;
 import bases.SpriteUtils;
+import renderer.ImageRenderer;
 
 import javax.imageio.ImageIO;
 import java.awt.*;
@@ -13,7 +14,7 @@ public class Background extends GameObject {
      * Contractor load image
      */
     public Background(){
-        this.image = SpriteUtils.loadImage("assets/images/background/0.png");
+        this.renderer = new ImageRenderer("assets/images/background/0.png");
         // background
         this.position.x = 0;
         this.position.y = 600 - 3109;
