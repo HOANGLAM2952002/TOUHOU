@@ -4,6 +4,7 @@ import bases.BoxCollider;
 import bases.GameObject;
 import bases.SpriteUtils;
 import bases.Vector2D;
+import entities.SphereRIGHT.SphereRight;
 import entities.player.Player;
 import renderer.ImageRenderer;
 
@@ -26,6 +27,8 @@ public class EnemyBlueBullet extends GameObject {
             System.out.println("dang va cham");
             player.deActive();
             this.deActive();
+            player.sphereRight.deActive();
+            player.sphereLeft.deActive();
         }
     }
 

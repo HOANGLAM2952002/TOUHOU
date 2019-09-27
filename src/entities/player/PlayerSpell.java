@@ -9,9 +9,12 @@ import entities.enemyBlue.EnemyBlue;
 import entities.enemyPink.EnemyPink;
 import renderer.Animation;
 
+import javax.swing.*;
+
 public class PlayerSpell extends GameObject{
 
     public PlayerSpell(){
+        this.velocity.set(0, -5);
         this.renderer = new Animation(20,
                 SpriteUtils.loadImage("assets/images/player-spells/a/0.png"),
                 SpriteUtils.loadImage("assets/images/player-spells/a/1.png"),
@@ -23,7 +26,6 @@ public class PlayerSpell extends GameObject{
 
     public void run() {
         deactiveIfNeeded();
-        position.y -= 5;
 
         EnemyBlack enemyBlack = GameObject.checkCollider(this, EnemyBlack.class);
         if (enemyBlack != null){
@@ -45,6 +47,7 @@ public class PlayerSpell extends GameObject{
             enemyPink.deActive();
             this.deActive();
         }
+        super.run();
     }
 
 

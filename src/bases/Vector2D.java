@@ -84,6 +84,15 @@ public class Vector2D {
     public void set(Vector2D other) {
         this.set(other.x, other.y);
     }
+
+    public void setAngle(double angle){
+        double currentLength = this.length();
+        if (currentLength != 0){
+            this.x = (float)(currentLength * Math.cos(angle));
+            this.y = (float)(currentLength * Math.sin(angle));
+        }
+    }
+
 }
 
 

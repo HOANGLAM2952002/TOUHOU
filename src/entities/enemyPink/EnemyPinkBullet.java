@@ -25,6 +25,8 @@ public class EnemyPinkBullet extends GameObject {
             System.out.println("dang va cham");
             player.deActive();
             this.deActive();
+            player.sphereRight.deActive();
+            player.sphereLeft.deActive();
         }
     }
 

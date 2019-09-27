@@ -1,5 +1,8 @@
 package game;
 
+import Scene.GamePlayScene;
+import Scene.SceneManager;
+import Scene.welcomeScene.GameWelcomeScene;
 import bases.GameObject;
 import bases.KeyPressed;
 import entities.*;
@@ -21,38 +24,10 @@ import java.util.Random;
 
 public class GameCanvas extends JPanel {
     Random rand = new Random();
-
-    Background background;
-    Player player;
-    EnemyBlack enemyBlack;
-    EnemyBlue enemyBlue;
-    EnemyPink enemyPink;
-    EnemyBlackSpawner enemyBlackSpawner;
-    EnemyBlueSpawner enemyBlueSpawner;
-    EnemyPinkSpawner enemyPinkSpawner;
-    SphereLeft sphereLeft;
-    SphereRight sphereRight;
     int move[] = {-5,5};
 
     public GameCanvas(){
-        this.background = new Background();
-        this.player = new Player();
-        this.enemyBlack = new EnemyBlack();
-        this.enemyBlue = new EnemyBlue();
-        this.enemyPink = new EnemyPink();
-
-        this.enemyBlackSpawner = new EnemyBlackSpawner();
-        this.enemyBlueSpawner = new EnemyBlueSpawner();
-        this.enemyPinkSpawner = new EnemyPinkSpawner();
-        this.player = GameObject.recycle(Player.class);
-//        // load image
-//        try {
-//            // try to catch read phrase
-//        } catch (IOException e) {
-//            // print errors if try wrong
-//            e.printStackTrace();
-//        }
-
+        SceneManager.signNewScene(new GameWelcomeScene());
         this.keyListener();
     }
 
@@ -63,6 +38,7 @@ public class GameCanvas extends JPanel {
 
             @Override
             public void keyPressed(KeyEvent e) {
+                KeyPressed.getInstance().anyKeyPressed = true;
                 if (e.getKeyCode() == KeyEvent.VK_UP){
                     /**
                      * get static from KeyPressed
@@ -90,6 +66,7 @@ public class GameCanvas extends JPanel {
 
             @Override
             public void keyReleased(KeyEvent e) {
+                KeyPressed.getInstance().anyKeyPressed = false;
                 if (e.getKeyCode() == KeyEvent.VK_UP){
                     KeyPressed.getInstance().upPressed = false;
                 }
@@ -115,7 +92,7 @@ public class GameCanvas extends JPanel {
     @Override
     protected void paintComponent(Graphics g) {
         g.setColor(Color.black);
-        g.fillRect(0, 0, 600, 600);
+        g.fillRect(0, 0, 700, 600);
         GameObject.renderAll(g);
     }
 

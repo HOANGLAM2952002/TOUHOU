@@ -6,6 +6,7 @@ public class KeyPressed {
     public boolean rightPressed;
     public boolean leftPressed;
     public boolean shootPresed;
+    public boolean anyKeyPressed;
 
 
     /**
@@ -19,6 +20,7 @@ public class KeyPressed {
         this.rightPressed = false;
         this.leftPressed = false;
         this.shootPresed = false;
+        this.anyKeyPressed = false;
     }
 
     public static KeyPressed getInstance(){

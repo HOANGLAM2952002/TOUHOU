@@ -13,6 +13,13 @@ public class GameObject {
         gameObjects.add(gameObject);
     }
 
+    /**
+     *
+     */
+    public static void clear() {
+        gameObjects.clear();
+    }
+
     public static void renderAll(Graphics g) {
         for (int i = 0; i < gameObjects.size(); i++) {
             GameObject gameObject = gameObjects.get(i);
@@ -96,6 +103,7 @@ public class GameObject {
         this.velocity = new Vector2D(0,0);
     }
 
+
     public void render(Graphics g) {
         if (renderer != null){
             renderer.render(g, this.position);
@@ -104,7 +112,6 @@ public class GameObject {
 
     public void run() {
         this.position.addUp(this.velocity);
-        this.velocity.set(0,0);
     }
 
     public void deActive(){

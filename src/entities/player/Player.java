@@ -1,17 +1,18 @@
 package entities.player;
+import Scene.GameOverScene.GameOverScene;
+import Scene.SceneManager;
 import bases.*;
 import entities.SphereLEFT.SphereLeft;
 import entities.SphereLEFT.SphereLeftSpell;
 import entities.SphereRIGHT.SphereRight;
 import entities.SphereRIGHT.SphereRightSpell;
 import renderer.Animation;
-import renderer.ImageRenderer;
 
 
 public class Player extends GameObject {
     long cnt = 0;
-    SphereRight sphereRight;
-    SphereLeft sphereLeft;
+    public SphereRight sphereRight;
+    public SphereLeft sphereLeft;
     public Player(){
         this.renderer = new Animation(10,
                 SpriteUtils.loadImage("assets/images/players/straight/0.png"),
@@ -23,7 +24,7 @@ public class Player extends GameObject {
                 SpriteUtils.loadImage("assets/images/players/straight/6.png"));
         this.position = new Vector2D(175, 500);
         this.cnt = 0;
-        //this.boxCollider = new BoxCollider(this, 32, 48);
+        this.boxCollider = new BoxCollider(this, 32, 48);
         this.sphereLeft = new SphereLeft();
         this.sphereRight = new SphereRight();
     }
@@ -83,15 +84,28 @@ public class Player extends GameObject {
      * add into array list playerSpells
      */
     private void castSpell() {
-        PlayerSpell newSpell = GameObject.recycle(PlayerSpell.class);
+        int numberB = 3;
+        double startAngle = -120;
+        double endAngle = -60;
+        double step = (endAngle - startAngle) / (numberB - 1);
+        for (int i = 0; i < numberB; i++){
+            PlayerSpell newSpell = GameObject.recycle(PlayerSpell.class);
+            newSpell.position.set(this.position.x, this.position.y);
+            newSpell.velocity.setAngle(Math.toRadians(startAngle + step*i));
+        }
+
         SphereLeftSpell sphereLeftSpell = GameObject.recycle(SphereLeftSpell.class);
         SphereRightSpell sphereRightSpell = GameObject.recycle(SphereRightSpell.class);
-        newSpell.position.x = this.position.x;
-        newSpell.position.y = this.position.y;
         sphereLeftSpell.position.x = this.position.x - 20;
         sphereLeftSpell.position.y = this.position.y;
         sphereRightSpell.position.x = this.position.x + 35;
         sphereRightSpell.position.y = this.position.y;
+    }
+
+    @Override
+    public void deActive() {
+        super.deActive();
+        SceneManager.signNewScene(new GameOverScene());
     }
 }
 
