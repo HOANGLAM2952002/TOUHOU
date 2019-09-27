@@ -1,4 +1,4 @@
-package entities.player;
+package entities.SphereRIGHT;
 
 import bases.BoxCollider;
 import bases.GameObject;
@@ -9,19 +9,19 @@ import entities.enemyBlue.EnemyBlue;
 import entities.enemyPink.EnemyPink;
 import renderer.Animation;
 
-public class PlayerSpell extends GameObject{
-
-    public PlayerSpell(){
+public class SphereRightSpell extends GameObject {
+    public SphereRightSpell(){
         this.renderer = new Animation(20,
-                SpriteUtils.loadImage("assets/images/player-spells/a/0.png"),
-                SpriteUtils.loadImage("assets/images/player-spells/a/1.png"),
-                SpriteUtils.loadImage("assets/images/player-spells/a/2.png"),
-                SpriteUtils.loadImage("assets/images/player-spells/a/3.png"));
+                SpriteUtils.loadImage("assets/images/sphere-spells/0.png"),
+                SpriteUtils.loadImage("assets/images/sphere-spells/1.png"),
+                SpriteUtils.loadImage("assets/images/sphere-spells/2.png"),
+                SpriteUtils.loadImage("assets/images/sphere-spells/3.png"));
+
         this.position = new Vector2D();
         this.boxCollider = new BoxCollider(this, 24, 24);
     }
 
-    public void run() {
+    public void run(){
         deactiveIfNeeded();
         position.y -= 5;
 
@@ -32,6 +32,13 @@ public class PlayerSpell extends GameObject{
             this.deActive();
         }
 
+        EnemyPink enemyPink = GameObject.checkCollider(this, EnemyPink.class);
+        if (enemyPink != null){
+            System.out.println("dang va cham");
+            enemyPink.deActive();
+            this.deActive();
+        }
+
         EnemyBlue enemyBlue = GameObject.checkCollider(this, EnemyBlue.class);
         if (enemyBlue != null){
             System.out.println("dang va cham");
@@ -39,19 +46,12 @@ public class PlayerSpell extends GameObject{
             this.deActive();
         }
 
-        EnemyPink enemyPink = GameObject.checkCollider(this, EnemyPink.class);
-        if (enemyPink != null){
-            System.out.println("dang va cham");
-            enemyPink.deActive();
+
+    }
+
+    private void deactiveIfNeeded() {
+        if (this.position.y < 0){
             this.deActive();
         }
     }
-
-
-    public void deactiveIfNeeded(){
-        if (this.position.y < 0){
-            deActive();
-        }
-    }
-
 }

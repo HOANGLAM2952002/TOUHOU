@@ -3,6 +3,8 @@ package game;
 import bases.GameObject;
 import bases.KeyPressed;
 import entities.*;
+import entities.SphereLEFT.SphereLeft;
+import entities.SphereRIGHT.SphereRight;
 import entities.enemyBlack.EnemyBlack;
 import entities.enemyBlack.EnemyBlackSpawner;
 import entities.enemyBlue.EnemyBlue;
@@ -28,6 +30,8 @@ public class GameCanvas extends JPanel {
     EnemyBlackSpawner enemyBlackSpawner;
     EnemyBlueSpawner enemyBlueSpawner;
     EnemyPinkSpawner enemyPinkSpawner;
+    SphereLeft sphereLeft;
+    SphereRight sphereRight;
     int move[] = {-5,5};
 
     public GameCanvas(){
@@ -40,6 +44,9 @@ public class GameCanvas extends JPanel {
         this.enemyBlackSpawner = new EnemyBlackSpawner();
         this.enemyBlueSpawner = new EnemyBlueSpawner();
         this.enemyPinkSpawner = new EnemyPinkSpawner();
+
+        this.sphereLeft = new SphereLeft();
+        this.sphereRight = new SphereRight();
         this.player = GameObject.recycle(Player.class);
 //        // load image
 //        try {

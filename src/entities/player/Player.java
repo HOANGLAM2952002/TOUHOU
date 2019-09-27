@@ -1,5 +1,6 @@
 package entities.player;
 import bases.*;
+import renderer.Animation;
 import renderer.ImageRenderer;
 
 
@@ -7,7 +8,14 @@ public class Player extends GameObject {
     long cnt = 0;
 
     public Player(){
-        this.renderer = new ImageRenderer("assets/images/players/straight/0.png");
+        this.renderer = new Animation(10,
+                SpriteUtils.loadImage("assets/images/players/straight/0.png"),
+                SpriteUtils.loadImage("assets/images/players/straight/1.png"),
+                SpriteUtils.loadImage("assets/images/players/straight/2.png"),
+                SpriteUtils.loadImage("assets/images/players/straight/3.png"),
+                SpriteUtils.loadImage("assets/images/players/straight/4.png"),
+                SpriteUtils.loadImage("assets/images/players/straight/5.png"),
+                SpriteUtils.loadImage("assets/images/players/straight/6.png"));
         this.position = new Vector2D(175, 500);
         this.cnt = 0;
         //this.boxCollider = new BoxCollider(this, 32, 48);
@@ -53,7 +61,6 @@ public class Player extends GameObject {
 
         this.position.x = Utils.clamp(this.position.x, 0, 384 - 44);
         this.position.y = Utils.clamp(this.position.y, 0, 600 - 100);
-
         this.velocity.set(vx, vy);
         super.run();
     }

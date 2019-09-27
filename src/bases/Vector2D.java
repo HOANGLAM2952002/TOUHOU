@@ -80,6 +80,10 @@ public class Vector2D {
         this.x = x;
         this.y = y;
     }
+
+    public void set(Vector2D other) {
+        this.set(other.x, other.y);
+    }
 }
 
 

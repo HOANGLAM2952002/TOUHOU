@@ -1,4 +1,4 @@
-package entities.player;
+package entities.SphereLEFT;
 
 import bases.BoxCollider;
 import bases.GameObject;
@@ -9,19 +9,20 @@ import entities.enemyBlue.EnemyBlue;
 import entities.enemyPink.EnemyPink;
 import renderer.Animation;
 
-public class PlayerSpell extends GameObject{
 
-    public PlayerSpell(){
+public class SphereLeftSpell extends GameObject {
+    public SphereLeftSpell(){
         this.renderer = new Animation(20,
-                SpriteUtils.loadImage("assets/images/player-spells/a/0.png"),
-                SpriteUtils.loadImage("assets/images/player-spells/a/1.png"),
-                SpriteUtils.loadImage("assets/images/player-spells/a/2.png"),
-                SpriteUtils.loadImage("assets/images/player-spells/a/3.png"));
+                SpriteUtils.loadImage("assets/images/sphere-spells/0.png"),
+                SpriteUtils.loadImage("assets/images/sphere-spells/1.png"),
+                SpriteUtils.loadImage("assets/images/sphere-spells/2.png"),
+                SpriteUtils.loadImage("assets/images/sphere-spells/3.png"));
+
         this.position = new Vector2D();
         this.boxCollider = new BoxCollider(this, 24, 24);
     }
 
-    public void run() {
+    public void run(){
         deactiveIfNeeded();
         position.y -= 5;
 
@@ -47,11 +48,9 @@ public class PlayerSpell extends GameObject{
         }
     }
 
-
-    public void deactiveIfNeeded(){
+    private void deactiveIfNeeded() {
         if (this.position.y < 0){
-            deActive();
+            this.deActive();
         }
     }
-
 }

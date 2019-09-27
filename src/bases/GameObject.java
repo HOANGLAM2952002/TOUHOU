@@ -105,7 +105,6 @@ public class GameObject {
     public void run() {
         this.position.addUp(this.velocity);
         this.velocity.set(0,0);
-
     }
 
     public void deActive(){

@@ -4,6 +4,7 @@ import bases.BoxCollider;
 import bases.GameObject;
 import bases.SpriteUtils;
 import bases.Vector2D;
+import renderer.Animation;
 import renderer.ImageRenderer;
 
 
@@ -11,7 +12,15 @@ public class EnemyBlack extends GameObject {
     int spellNum = 4;
     int bullet_cnt = 0;
     public EnemyBlack(){
-        this.renderer = new ImageRenderer("assets/images/enemies/level0/black/0.png");
+        this.renderer = new Animation(20,
+                SpriteUtils.loadImage("assets/images/enemies/level0/black/0.png"),
+                SpriteUtils.loadImage("assets/images/enemies/level0/black/1.png"),
+                SpriteUtils.loadImage("assets/images/enemies/level0/black/2.png"),
+                SpriteUtils.loadImage("assets/images/enemies/level0/black/4.png"),
+                SpriteUtils.loadImage("assets/images/enemies/level0/black/5.png"),
+                SpriteUtils.loadImage("assets/images/enemies/level0/black/6.png"),
+                SpriteUtils.loadImage("assets/images/enemies/level0/black/7.png"),
+                SpriteUtils.loadImage("assets/images/enemies/level0/black/8.png"));
         this.position = new Vector2D((float) Math.random() * 384, 0);
         this.boxCollider = new BoxCollider(this, 28,28);
     }
@@ -49,4 +58,10 @@ public class EnemyBlack extends GameObject {
         }
     }
 
+    @Override
+    public void deActive() {
+        super.deActive();
+        EnemyBlackExplosion enemyBlackExplosion = GameObject.recycle(EnemyBlackExplosion.class);
+        enemyBlackExplosion.position.set(this.position);
+    }
 }
