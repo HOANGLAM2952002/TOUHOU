@@ -44,9 +44,6 @@ public class GameCanvas extends JPanel {
         this.enemyBlackSpawner = new EnemyBlackSpawner();
         this.enemyBlueSpawner = new EnemyBlueSpawner();
         this.enemyPinkSpawner = new EnemyPinkSpawner();
-
-        this.sphereLeft = new SphereLeft();
-        this.sphereRight = new SphereRight();
         this.player = GameObject.recycle(Player.class);
 //        // load image
 //        try {

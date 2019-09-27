@@ -14,6 +14,7 @@ public class Animation implements Renderer{
 
     /**
      * ghi de len ham Animation
+     * ham mac dinh false
      * @param frameDelay
      * @param imgs
      */

@@ -2,25 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf343e48-2577-41b6-a060-3c686a08142a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/entities/SphereLEFT/SphereLeft.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/SphereLEFT/SphereLeftSpell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/SphereRIGHT/SphereRight.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/SphereRIGHT/SphereRightSpell.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/entities/enemyBlack/EnemyBlackExplosion.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/renderer/Animation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/entities/enemyBlue/EnemyBlueExplosion.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game/bases/GameObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/bases/GameObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game/bases/Vector2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/bases/Vector2D.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game/entities/EnemyBlack/EnemyBlack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/entities/EnemyBlack/EnemyBlack.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CI-game/game/GameCanvas$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/game/GameCanvas$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/CI-game/game/GameCanvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/game/GameCanvas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bases/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bases/Vector2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/Vector2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/enemyBlack/EnemyBlack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/enemyBlack/EnemyBlack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/SphereLEFT/SphereLeft.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/SphereLEFT/SphereLeft.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/SphereRIGHT/SphereRight.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/SphereRIGHT/SphereRight.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/entities/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/player/PlayerSpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/player/PlayerSpell.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/game/GameCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameCanvas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Renderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/renderer/Animation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Animation.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -167,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569247641015</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="Update: Add Spheres">
+      <created>1569577988654</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1569577988654</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -190,14 +187,15 @@
     <MESSAGE value="Update: Refractor and add keyPressed class" />
     <MESSAGE value="Update: Add class Enemy and PlayerSpell" />
     <MESSAGE value="Update: Add Interface renderer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update: Add Interface renderer" />
+    <MESSAGE value="Update: Add Spheres" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: Add Spheres" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/entities/player/Player.java</url>
-          <line>46</line>
+          <line>53</line>
           <option name="timeStamp" value="1" />
         </line-breakpoint>
       </breakpoints>

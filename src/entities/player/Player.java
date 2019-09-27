@@ -1,12 +1,17 @@
 package entities.player;
 import bases.*;
+import entities.SphereLEFT.SphereLeft;
+import entities.SphereLEFT.SphereLeftSpell;
+import entities.SphereRIGHT.SphereRight;
+import entities.SphereRIGHT.SphereRightSpell;
 import renderer.Animation;
 import renderer.ImageRenderer;
 
 
 public class Player extends GameObject {
     long cnt = 0;
-
+    SphereRight sphereRight;
+    SphereLeft sphereLeft;
     public Player(){
         this.renderer = new Animation(10,
                 SpriteUtils.loadImage("assets/images/players/straight/0.png"),
@@ -19,6 +24,8 @@ public class Player extends GameObject {
         this.position = new Vector2D(175, 500);
         this.cnt = 0;
         //this.boxCollider = new BoxCollider(this, 32, 48);
+        this.sphereLeft = new SphereLeft();
+        this.sphereRight = new SphereRight();
     }
 
 //    /**
@@ -62,6 +69,11 @@ public class Player extends GameObject {
         this.position.x = Utils.clamp(this.position.x, 0, 384 - 44);
         this.position.y = Utils.clamp(this.position.y, 0, 600 - 100);
         this.velocity.set(vx, vy);
+
+        sphereLeft.position.x = this.position.x - 20;
+        sphereRight.position.x = this.position.x + 35;
+        sphereLeft.position.y = this.position.y;
+        sphereRight.position.y = this.position.y;
         super.run();
     }
 
@@ -72,8 +84,14 @@ public class Player extends GameObject {
      */
     private void castSpell() {
         PlayerSpell newSpell = GameObject.recycle(PlayerSpell.class);
+        SphereLeftSpell sphereLeftSpell = GameObject.recycle(SphereLeftSpell.class);
+        SphereRightSpell sphereRightSpell = GameObject.recycle(SphereRightSpell.class);
         newSpell.position.x = this.position.x;
         newSpell.position.y = this.position.y;
+        sphereLeftSpell.position.x = this.position.x - 20;
+        sphereLeftSpell.position.y = this.position.y;
+        sphereRightSpell.position.x = this.position.x + 35;
+        sphereRightSpell.position.y = this.position.y;
     }
 }
 
