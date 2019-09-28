@@ -2,33 +2,125 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cf343e48-2577-41b6-a060-3c686a08142a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Scene/GameOverScene/BackgroundOver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Scene/GameOverScene/GameOverScene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Scene/GamePlayScene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Scene/Scene.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Scene/SceneManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Scene/welcomeScene/BackgroundWelcome.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Scene/welcomeScene/GameWelcomeScene.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game/bases/GameObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/bases/GameObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game/bases/KeyPressed.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/bases/KeyPressed.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game/bases/Vector2D.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/bases/Vector2D.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game/entities/EnemyBlack/EnemyBlackBullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/entities/EnemyBlack/EnemyBlackBullet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game/entities/EnemyBlue/EnemyBlueBullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/entities/EnemyBlue/EnemyBlueBullet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game/entities/EnemyPink/EnemyPinkBullet.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/entities/EnemyPink/EnemyPinkBullet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game/game/GameCanvas$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/game/GameCanvas$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game/game/GameCanvas.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/game/GameCanvas.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game/game/GameWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/game/GameWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bases/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bases/KeyPressed.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/KeyPressed.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bases/Vector2D.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/Vector2D.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/enemyBlack/EnemyBlackBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/enemyBlack/EnemyBlackBullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/enemyBlue/EnemyBlueBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/enemyBlue/EnemyBlueBullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/enemyPink/EnemyPinkBullet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/enemyPink/EnemyPinkBullet.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/player/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/player/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/player/PlayerSpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/player/PlayerSpell.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/GameCanvas.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameCanvas.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/game/GameWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/game/GameWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/background/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/bullets/blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/bullets/cyan.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/bullets/green.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/bullets/pink.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/bullets/red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/bullets/white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/bullets/yellow.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/explosion-big/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/explosion-big/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/explosion-big/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/explosion-big/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/explosion-big/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/explosion-big/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/explosion-big/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/explosion-big/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/explosion/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/explosion/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/explosion/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/explosion/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/explosion/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/explosion/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/explosion/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/explosion/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/level0/black/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/level0/black/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/level0/black/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/level0/black/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/level0/black/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/level0/black/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/level0/black/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/level0/black/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/level0/blue/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/level0/blue/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/level0/blue/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/level0/blue/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/level0/pink/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/level0/pink/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/level0/pink/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/enemies/level0/pink/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/hud/enemy-banner.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/hud/numbers/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/hud/numbers/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/hud/numbers/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/hud/numbers/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/hud/numbers/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/hud/numbers/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/hud/numbers/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/hud/numbers/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/hud/numbers/8.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/hud/numbers/9.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/hud/picture.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/hud/player.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/hud/power.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/hud/ring.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/items/power-up-blue.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/items/power-up-red.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/menus/quit-color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/menus/quit-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/menus/start-color.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/menus/start-white.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/player-spells/a/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/player-spells/a/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/player-spells/a/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/player-spells/a/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/players/explosions/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/players/explosions/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/players/explosions/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/players/explosions/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/players/explosions/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/players/explosions/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/players/explosions/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/players/explosions/7.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/players/left/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/players/left/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/players/left/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/players/left/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/players/left/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/players/left/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/players/right/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/players/right/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/players/right/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/players/right/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/players/right/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/players/right/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/players/straight/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/players/straight/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/players/straight/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/players/straight/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/players/straight/4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/players/straight/5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/players/straight/6.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/scenes/background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/scenes/game-over-background.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/scenes/menu.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/scenes/thanks-for-playing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/scenes/victory-background.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/scenes/victory.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/sphere-spells/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/sphere-spells/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/sphere-spells/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/sphere-spells/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/sphere/0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/sphere/1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/sphere/2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/sphere/3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/music/1.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/music/bgm/ending.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/music/bgm/game-over.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/music/bgm/title.mp3" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/music/sfx/enemy-explosion-big.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/music/sfx/enemy-explosion.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/music/sfx/item-collect.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/music/sfx/ok.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/music/sfx/option.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/music/sfx/player-dead.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/music/sfx/player-shoot.wav" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/music/sfx/powerup.wav" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -190,7 +282,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569587570247</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Update: Add setAngle">
+      <created>1569595849368</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1569595849368</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -215,6 +314,7 @@
     <MESSAGE value="Update: Add Interface renderer" />
     <MESSAGE value="Update: Add Spheres" />
     <MESSAGE value="Update: Add Spheres (refractor)" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update: Add Spheres (refractor)" />
+    <MESSAGE value="Update: Add setAngle" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: Add setAngle" />
   </component>
 </project>
