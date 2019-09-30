@@ -18,6 +18,7 @@ public class Background extends GameObject {
         // background
         this.position.x = 0;
         this.position.y = 600 - 3109;
+        this.anchor.set(0,0);
     }
 
     /**

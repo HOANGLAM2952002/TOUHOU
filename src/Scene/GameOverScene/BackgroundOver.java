@@ -12,6 +12,7 @@ import renderer.ImageRenderer;
 public class BackgroundOver extends GameObject {
     public BackgroundOver(){
         this.renderer = new ImageRenderer("assets/images/scenes/game-over-background.jpg");
+        this.anchor.set(0,0);
     }
 
     @Override

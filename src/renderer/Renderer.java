@@ -1,7 +1,7 @@
 package renderer;
-import bases.Vector2D;
+import bases.GameObject;
 import java.awt.*;
 
 public interface Renderer {
-    void render(Graphics g, Vector2D position);
+    void render(Graphics g, GameObject master);
 }

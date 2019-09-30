@@ -1,5 +1,6 @@
 package renderer;
 
+import bases.GameObject;
 import bases.SpriteUtils;
 import bases.Vector2D;
 
@@ -11,7 +12,9 @@ public class ImageRenderer implements Renderer{
         this.image = SpriteUtils.loadImage(url);
     }
 
-    public void render(Graphics g, Vector2D position){
-        g.drawImage(this.image, (int)position.x, (int)position.y, null);
+    public void render(Graphics g, GameObject master){
+        g.drawImage(this.image,
+                (int) (master.position.x - master.anchor.x * this.image.getWidth(null)),
+                (int) (master.position.y - master.anchor.y * this.image.getHeight(null)), null);
     }
 }

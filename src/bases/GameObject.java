@@ -90,6 +90,7 @@ public class GameObject {
     public Vector2D position;
     public BoxCollider boxCollider;
     public Vector2D velocity;
+    public Vector2D anchor;
 
     /**
      * check xem co dang song ko
@@ -101,12 +102,17 @@ public class GameObject {
         this.position = new Vector2D(0, 0);
         this.isActive = true;
         this.velocity = new Vector2D(0,0);
+        /**
+         * cast ve float
+         */
+        this.anchor = new Vector2D(0.5f, 0.5f);
+//        String s = 5+"";
     }
 
 
     public void render(Graphics g) {
         if (renderer != null){
-            renderer.render(g, this.position);
+            renderer.render(g, this);
         }
     }
 
