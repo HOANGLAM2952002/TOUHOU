@@ -9,7 +9,6 @@ import entities.enemyBlue.EnemyBlue;
 import entities.enemyPink.EnemyPink;
 import renderer.Animation;
 
-import javax.swing.*;
 
 public class PlayerSpell extends GameObject{
 

@@ -3,17 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="cf343e48-2577-41b6-a060-3c686a08142a" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game/bases/BoxCollider.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/bases/BoxCollider.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game/bases/GameObject.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/bases/GameObject.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/CI-game/entities/Background.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/CI-game/entities/Background.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scene/GameOverScene/BackgroundOver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scene/GameOverScene/BackgroundOver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Scene/welcomeScene/BackgroundWelcome.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Scene/welcomeScene/BackgroundWelcome.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bases/BoxCollider.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/BoxCollider.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/bases/GameObject.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/bases/GameObject.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/entities/Background.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/Background.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/Animation.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Animation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/ImageRenderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/ImageRenderer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/renderer/Renderer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/renderer/Renderer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/entities/player/PlayerSpell.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/entities/player/PlayerSpell.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,6 +33,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
@@ -191,7 +182,14 @@
       <option name="project" value="LOCAL" />
       <updated>1569653236513</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Update: Add Anchor">
+      <created>1569850006709</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1569850006709</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -217,6 +215,7 @@
     <MESSAGE value="Update: Add Spheres" />
     <MESSAGE value="Update: Add Spheres (refractor)" />
     <MESSAGE value="Update: Add setAngle" />
-    <option name="LAST_COMMIT_MESSAGE" value="Update: Add setAngle" />
+    <MESSAGE value="Update: Add Anchor" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update: Add Anchor" />
   </component>
 </project>
